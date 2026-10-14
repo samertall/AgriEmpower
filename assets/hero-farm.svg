@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460" fill="none" role="img">
+  <defs>
+    <linearGradient id="hillBack" x1="400" y1="170" x2="300" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#C1DDB1"/><stop offset="1" stop-color="#A3C98F"/></linearGradient>
+    <linearGradient id="hillFront" x1="260" y1="267" x2="365" y2="460" gradientUnits="userSpaceOnUse"><stop stop-color="#91BD7B"/><stop offset="1" stop-color="#5E9F67"/></linearGradient>
+    <linearGradient id="dress" x1="230" y1="210" x2="267" y2="353" gradientUnits="userSpaceOnUse"><stop stop-color="#F6B574"/><stop offset="1" stop-color="#E48C58"/></linearGradient>
+    <linearGradient id="basket" x1="325" y1="282" x2="385" y2="366" gradientUnits="userSpaceOnUse"><stop stop-color="#D69B57"/><stop offset="1" stop-color="#AF7140"/></linearGradient>
+    <clipPath id="groundClip"><path d="M0 365C104 287 225 310 308 327C431 353 548 246 720 304V460H0V365Z"/></clipPath>
+  </defs>
+  <g opacity=".42" stroke="#C9E6B9" stroke-width="1.6">
+    <circle cx="545" cy="176" r="156"/><circle cx="545" cy="176" r="208"/>
+  </g>
+  <circle cx="550" cy="91" r="48" fill="#F8D69D"/>
+  <circle cx="550" cy="91" r="59" stroke="#F8D69D" stroke-opacity=".35" stroke-width="2"/>
+  <path d="M418 95c10-15 21-16 33 0M446 84c7-11 17-12 25 0" stroke="#F6EDD1" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+  <path d="M575 174c10-9 18-9 26 0m22-21c9-8 15-8 24 0" stroke="#D8E9CD" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+  <path d="M0 324C126 223 228 222 340 283c125-116 244-102 380-34v211H0V324Z" fill="url(#hillBack)"/>
+  <path d="M0 338c129-55 217-62 333-8 146-73 278-88 387-33v163H0V338Z" fill="#78B181"/>
+  <path d="M0 365C104 287 225 310 308 327C431 353 548 246 720 304V460H0V365Z" fill="url(#hillFront)"/>
+  <g clip-path="url(#groundClip)" stroke="#CEE5A9" opacity=".82" stroke-width="3">
+    <path d="M-65 447c206-93 365-92 560-38 115 32 190 24 272 16"/>
+    <path d="M-65 411c206-93 365-92 560-38 115 32 190 24 272 16"/>
+    <path d="M-65 375c206-93 365-92 560-38 115 32 190 24 272 16"/>
+    <path d="M-20 481c182-105 362-101 556-46 88 25 156 20 227 7"/>
+    <path d="M-25 516c182-105 362-101 556-46 88 25 156 20 227 7"/>
+  </g>
+  <g opacity=".75">
+    <path d="M34 311c8-20 26-24 33-17 9-13 30-12 34 3 12-4 27 5 29 16H34Z" fill="#578F61"/>
+    <path d="M616 295c9-26 30-30 38-20 12-11 27-9 33 4 12-3 27 4 31 16H616Z" fill="#457D58"/>
+  </g>
+  <!-- Farmer 1: standing woman carrying produce -->
+  <g transform="translate(134 121)">
+    <!-- Ground shadow -->
+    <ellipse cx="116" cy="272" rx="73" ry="11" fill="#387948" fill-opacity=".23"/>
+    <!-- Head wrap -->
+    <path d="M99 65c-12-10-11-31 1-43 12-12 35-12 48 1 13 15 10 30 2 43l-51-1Z" fill="#5B9F8C"/>
+    <path d="M96 39c8-26 43-30 57-3l-2 13c-18-4-34-10-55-5V39Z" fill="#327C73"/>
+    <path d="M132 27c-7-5-8-14-2-18 8-2 17 7 15 14Z" fill="#5B9F8C"/>
+    <!-- face, ears, neck -->
+    <path d="M107 45c1-11 9-19 21-20 13 1 22 11 22 25v21c-1 18-10 29-23 29-11 0-21-11-22-29l2-26Z" fill="#A76143"/>
+    <ellipse cx="105" cy="61" rx="5" ry="8" fill="#A76143"/><ellipse cx="151" cy="61" rx="5" ry="8" fill="#A76143"/>
+    <path d="M121 67h3m14 0h3" stroke="#5A3B2F" stroke-width="2.3" stroke-linecap="round"/><path d="M125 82c5 4 10 4 15-1" stroke="#713D32" stroke-width="2" stroke-linecap="round"/>
+    <path d="M119 93v18h19V93" fill="#A76143"/>
+    <!-- shawl and dress -->
+    <path d="M95 111c5-10 14-13 23-14l19-1c15 4 27 10 29 28l13 96-102 1 8-95c1-7 5-12 10-15Z" fill="url(#dress)"/>
+    <path d="M94 110c18 12 36 17 58 5l-5-16c-21 7-31 5-45 0l-8 11Z" fill="#FFF0D5"/>
+    <path d="M99 130c27 15 42 17 65 6" stroke="#FBC997" stroke-width="4" stroke-linecap="round"/>
+    <path d="M79 222c29 6 64 6 101 0l10 47H72l7-47Z" fill="#F1A469"/>
+    <path d="M90 269l-1 6h24l3-6m44 0 2 6h25l-3-6" fill="#784F3F"/>
+    <!-- sleeves and arms -->
+    <path d="M86 121c-13 5-18 13-20 31l-12 34 18 7 17-46" fill="#B8734E"/>
+    <path d="M164 124c12 2 19 12 23 27l12 26-16 8-23-41" fill="#B8734E"/>
+    <!-- basket left hand -->
+    <path d="M39 165c7-20 46-20 53 0" stroke="#98683D" stroke-width="8" stroke-linecap="round"/>
+    <path d="M38 161h55l-9 48H49l-11-48Z" fill="url(#basket)"/>
+    <path d="M45 174h41m-39 11h36m-31 12h28" stroke="#EBC18B" stroke-width="3" stroke-opacity=".7"/>
+    <path d="M45 161c-3-12 8-18 14-13 0-10 14-14 20-4 9-6 16 2 13 17H45Z" fill="#8AAE5B"/>
+    <path d="M59 155c-2-12 4-17 6-19m14 18c-1-11 6-17 12-17" stroke="#457A45" stroke-width="3" stroke-linecap="round"/>
+    <path d="M70 190c-8-5-11-8-14-10" stroke="#AB6645" stroke-width="9" stroke-linecap="round"/>
+    <!-- small shawl edge -->
+    <path d="M107 113c16 17 30 26 49 31" stroke="#F8D9B4" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+  </g>
+  <!-- Farmer 2: woman tending a seedling -->
+  <g transform="translate(377 174)">
+    <ellipse cx="114" cy="219" rx="88" ry="10" fill="#326E48" fill-opacity=".22"/>
+    <!-- legs bent -->
+    <path d="M81 161c-15 12-34 24-37 47l37 1 42-26" fill="#244F5C"/>
+    <path d="M116 167c15 7 29 22 38 42h35c-4-31-29-61-58-67" fill="#2B6872"/>
+    <path d="M45 207c-15 1-21 6-23 12h56l4-12Z" fill="#AA6948"/><path d="M151 208c11 1 24 5 27 11h20c-2-8-8-13-13-14Z" fill="#AA6948"/>
+    <!-- blouse -->
+    <path d="M79 108c13-9 51-11 64 9l-7 53-62 2-8-37c-2-10 5-23 13-27Z" fill="#F3D19B"/>
+    <path d="M81 114c-12 4-20 11-28 25l-20 29 15 9 33-34" fill="#A35D43"/>
+    <path d="M136 113c12 0 19 7 25 19l15 30-16 8-24-32" fill="#A35D43"/>
+    <!-- neck and face -->
+    <path d="M99 100v13h24v-16" fill="#A76548"/>
+    <path d="M88 47c2-17 15-25 28-25 16 0 28 14 27 31l-2 32c-2 13-14 22-26 22-14-2-25-17-25-32l-2-28Z" fill="#B77454"/>
+    <path d="M94 66h2m26 0h2" stroke="#663E33" stroke-width="3" stroke-linecap="round"/><path d="M109 84c4 3 9 3 13-1" stroke="#814631" stroke-width="2" stroke-linecap="round"/>
+    <!-- wrapped hair -->
+    <path d="M84 56c-6-17-1-41 19-48 23-9 43 3 45 27l-1 21c-5-9-9-16-13-19-14 7-27 7-48 5l-2 14Z" fill="#8D6947"/>
+    <path d="M80 37c9-32 50-42 66-7l-6 17c-19-16-42-15-60-10Z" fill="#D49B66"/>
+    <path d="M86 31c24 1 38-6 52-14" stroke="#F2BD83" stroke-width="6" stroke-linecap="round"/>
+    <!-- hand planting -->
+    <path d="M41 172c-1 9-5 15-12 18" stroke="#B77454" stroke-width="10" stroke-linecap="round"/>
+    <path d="M165 168c2 11 10 13 21 16" stroke="#B77454" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <!-- Seedling between hands -->
+  <g transform="translate(568 350)">
+    <path d="M0 47V4" stroke="#275D3E" stroke-width="5" stroke-linecap="round"/>
+    <path d="M1 24C-30 26-38 9-29-6-10-7 1 3 1 24Z" fill="#C4DA79"/>
+    <path d="M0 16C16-6 37-5 37 10 31 27 15 28 0 16Z" fill="#D4EAA1"/>
+    <path d="M-10 47c7-7 12-7 20 0" stroke="#3A8150" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <!-- foreground crops -->
+  <g fill="#D4EAA1" stroke="#43865A" stroke-width="3" stroke-linejoin="round">
+    <path d="M73 409c-9-12-14-23-11-34 15-2 22 10 22 29 4-23 15-29 26-27-1 15-9 26-25 32v22"/>
+    <path d="M341 405c-8-9-12-21-10-31 14 0 20 11 20 25 8-20 17-25 28-22-2 13-10 23-27 27v22"/>
+    <path d="M672 380c-9-12-12-21-9-29 14 0 21 10 22 24 5-19 14-23 23-20-2 13-10 20-24 23v22"/>
+  </g>
+  <g fill="#E8F2B8" opacity=".9"><circle cx="361" cy="280" r="4"/><circle cx="600" cy="225" r="3"/><circle cx="313" cy="222" r="3"/><circle cx="52" cy="250" r="3"/><circle cx="620" cy="312" r="4"/></g>
+</svg>

@@ -1,32 +1,116 @@
 # AgriEmpower
 
-AgriEmpower is a platform dedicated to educating female farmers in Rwanda to combat food insecurity and child malnutrition. By providing access to vital agricultural knowledge, resources, and community support, we aim to empower women in agriculture to enhance their productivity and contribute to the health and well-being of their families and communities.
+**Grow. Learn. Thrive.**
 
-## Features
-- **Educational Modules:**
-  - Agricultural Practices: Comprehensive tutorials on modern and sustainable farming techniques, crop rotation, soil health, pest management, and irrigation.
-  - Nutrition and Health: Information on growing nutrient-rich crops, balanced diets, and best practices to prevent child malnutrition.
-- **Resource Library:**
-  - Multimedia Resources: Videos, infographics, and written guides tailored to the literacy levels and languages of the target audience.
-  - Toolkits and Templates: Practical resources such as planting schedules, budget templates, and record-keeping forms.
-- **Community Platform:**
-  - Forums and Discussion Groups: A space for female farmers to share experiences, ask questions, and support each other.
-  - Mentorship Program: Connects experienced farmers and agricultural experts with women seeking guidance and advice.
-- **Impact Tracking:**
-  - Progress Monitoring: Tools to track improvements in crop yields, household food security, and child nutrition over time.
-  - Success Stories: Highlights of individual and community successes to inspire and motivate other participants.
-- **Localized Support:**
-  - Field Agents: On-ground support from agricultural experts to provide hands-on training and assistance.
-  - Partnerships: Collaborations with local NGOs, government agencies, and agricultural institutions to enhance resource availability and support.
+AgriEmpower is a responsive, installable, bilingual (English / Kinyarwanda starter copy) learning platform intended to support women farmers in Rwanda. It introduces accessible agricultural practices, household nutrition education, practical planning resources, and tools for tracking learning and farm activity.
 
-## Getting Started
-To get started with contributing to AgriEmpower, follow these steps:
+> **Project status: interactive front-end MVP.** Learning progress, bookmarks, discussions, mentoring interests, and farm records are saved **only on the current device**. There is no account system, online forum, mentor matching network, verified agent booking, backend, or live impact database yet. Never present the demo as an operational service or verified impact program.
 
-1. Fork the repository
-2. Clone the repository to your local machine
-3. Create a new branch for your feature or bugfix
-4. Commit your changes and push them to your fork
-5. Submit a pull request
+## Included features
+
+| Area | Working MVP functionality | Later production integration |
+| --- | --- | --- |
+| Education | 8 short interactive farming and nutrition lessons with knowledge checks, optional speech playback, and completion tracking | Expert-reviewed multimedia and formal curricula |
+| Localization | English / Kinyarwanda language switch and translated starter curriculum | Community-reviewed translation, accessible audio and regional languages |
+| Resources | Searchable guides, printable checklists, CSV farm planning templates and seasonal planting-plan sheet, bookmarks, vetted public resource links | Downloaded media, translated PDF toolkits, localized planting calendars |
+| Community | Topic-based discussion drafts and replies saved on the device | Secure multi-user posts, moderation, anti-abuse safeguards |
+| Mentorship | Interest and support-request drafts saved locally | Verified mentors, consent, partner referrals and messaging |
+| Impact | Harvest kilograms, food-availability and vegetable-meal day records; chart, milestones, CSV/JSON export | Secure longitudinal reporting with careful indicators and consent |
+| Offline | Service-worker app-shell caching after an online first visit | Offline translations, video packages and robust sync |
+
+## Quick start
+
+The site is built with native HTML, CSS and JavaScript modules. **No npm dependencies or API keys are needed.** Node.js 20+ is recommended for the local development server, tests and build script.
+
+```bash
+# Clone your GitHub repository and enter it.
+git clone https://github.com/YOUR_USERNAME/agriempower.git
+cd agriempower
+
+# Start the development web server.
+npm run dev
+
+# Visit http://localhost:4173
+```
+
+You can also host the files with any local static file server. Do not open `index.html` with `file://` because module imports and the offline service worker require HTTP(S).
+
+## Run checks and build
+
+```bash
+npm test
+npm run build
+```
+
+`npm run build` creates `dist/`, a dependency-free static site ready for deployment.
+
+## Publish on GitHub Pages
+
+1. Create a new **public GitHub repository** named `agriempower` (or any name you prefer).
+2. Copy the files from this project into the repository root, including the `.github/workflows/deploy.yml` file.
+3. Commit and push to the `main` branch.
+4. In GitHub, open **Settings > Pages > Build and deployment > Source**, then choose **GitHub Actions**.
+5. The included workflow automatically tests, builds and publishes after every push to `main`.
+6. Find the deployed URL under **Settings > Pages**, usually `https://YOUR_USERNAME.github.io/agriempower/`.
+
+This project uses relative asset URLs and `#/page` routes so it works in GitHub Pages subfolders without special routing configuration.
+
+## Project structure
+
+```text
+agriempower/
+  .github/workflows/deploy.yml   # test + deploy to GitHub Pages
+  assets/                        # original SVG illustration and install icons
+  scripts/build.mjs              # builds /dist without third-party tools
+  scripts/dev.mjs                # local HTTP server
+  src/app.js                     # routing, views, interactions and forms
+  src/data.js                    # starter lesson/resource content
+  src/i18n.js                    # interface English/Kinyarwanda translations
+  src/icons.js                   # local SVG icons
+  src/storage.js                 # isolated localStorage access
+  src/utils.js                   # escaping, validation, CSV and routing
+  tests/utils.test.mjs           # Node unit tests
+  index.html                     # app entry point
+  styles.css                     # responsive design system
+  sw.js                          # offline app-shell caching
+  manifest.webmanifest           # installable-app configuration
+  CONTRIBUTING.md
+  PRIVACY.md
+  LICENSE
+```
+
+## Accessibility and field deployment
+
+- Designed mobile-first with readable typography, large tap targets, semantic controls, keyboard navigation, visible focus, and reduced-motion support.
+- Works after first visit offline for the app shell and included lessons. **External FAO/RAB/WHO links, Google Fonts and speech services may need connectivity.** Device text-to-speech support, especially for Kinyarwanda, varies by operating system; do not rely on audio alone.
+- All curriculum, translated text, and illustrations are **starter assets**. Before deployment with participants, have Rwanda-based women farmers, extension workers, child-nutrition specialists, and qualified Kinyarwanda translators review clarity, accuracy, tone and local relevance.
+- Do not use the seven-day household food questions as a diagnostic tool. Avoid storing identifying or sensitive health information without an appropriately designed consent and security model.
+- The interface uses externally hosted optional web fonts; system fonts remain available when offline.
+- Users should be warned that browser storage can be cleared and that shared devices may expose locally stored records. A JSON export and local-data deletion control are provided in Support.
+
+## Trusted external educational references
+
+AgriEmpower's external reference cards point to publicly accessible resources. Inclusion **does not imply endorsement or a partnership**.
+
+- [Rwanda Agriculture and Animal Resources Development Board (RAB)](https://www.rab.gov.rw/)
+- [FAO: Food Plants for Healthy Diets in Rwanda](https://www.fao.org/family-farming/detail/en/c/1604576/)
+- [FAO: Healthy eating educational resources](https://www.fao.org/nutrition/education/healthy-eating-resources)
+- [WHO: Complementary feeding](https://www.who.int/health-topics/complementary-feeding)
+- [FAO: Farmer Field School videos](https://www.fao.org/farmer-field-schools/resources/videos/en)
+
+## Production roadmap
+
+1. **Validate the curriculum in Rwanda:** participatory research, literacy testing, Kinyarwanda translation QA, localized calendars and field-worker review.
+2. **Secure authentication and consent:** opt-in profiles, roles, encryption in transit, access control, data retention and deletion, and a defensible privacy policy.
+3. **Real community and mentors:** database/API, content moderation, reporting/blocking, mentor verification, safeguards, notifications and referral operations.
+4. **Richer educational delivery:** captions, audio recordings in local languages, low-bandwidth video, content versioning and accessible downloadable guides.
+5. **Meaningful impact research:** consented longitudinal metrics, baselines, validation, disaggregation, program evaluation and honest outcomes reporting.
+6. **Operational partnerships:** verify any field agent and NGO/government relationship before showing it as active.
+
+## How to contribute
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md). Contributions to UX, translation, educational accuracy, security, documentation and development are welcome.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+MIT. See [LICENSE](LICENSE). The project's educational summaries are starter original content; linked third-party works retain their own licenses and should not be copied into the repository without permission.
