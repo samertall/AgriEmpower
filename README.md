@@ -2,6 +2,10 @@
 
 **Grow. Learn. Thrive.**
 
+![AgriEmpower product overview: farming and nutrition lessons, bilingual learning, practical resources, and on-device progress tracking](assets/agriempower-overview.svg)
+
+*An illustrative overview of the current interactive front-end MVP. Progress and farm records are stored on the current device; this is not a live service or verified impact program.*
+
 AgriEmpower is a responsive, installable, bilingual (English / Kinyarwanda starter copy) learning platform intended to support women farmers in Rwanda. It introduces accessible agricultural practices, household nutrition education, practical planning resources, and tools for tracking learning and farm activity.
 
 > **Project status: interactive front-end MVP.** Learning progress, bookmarks, discussions, mentoring interests, and farm records are saved **only on the current device**. There is no account system, online forum, mentor matching network, verified agent booking, backend, or live impact database yet. Never present the demo as an operational service or verified impact program.
@@ -23,9 +27,9 @@ AgriEmpower is a responsive, installable, bilingual (English / Kinyarwanda start
 The site is built with native HTML, CSS and JavaScript modules. **No npm dependencies or API keys are needed.** Node.js 20+ is recommended for the local development server, tests and build script.
 
 ```bash
-# Clone your GitHub repository and enter it.
-git clone https://github.com/YOUR_USERNAME/agriempower.git
-cd agriempower
+# Clone this repository and enter it.
+git clone https://github.com/samertall/AgriEmpower.git
+cd AgriEmpower
 
 # Start the development web server.
 npm run dev
@@ -46,21 +50,19 @@ npm run build
 
 ## Publish on GitHub Pages
 
-1. Create a new **public GitHub repository** named `agriempower` (or any name you prefer).
-2. Copy the files from this project into the repository root, including the `.github/workflows/deploy.yml` file.
-3. Commit and push to the `main` branch.
-4. In GitHub, open **Settings > Pages > Build and deployment > Source**, then choose **GitHub Actions**.
-5. The included workflow automatically tests, builds and publishes after every push to `main`.
-6. Find the deployed URL under **Settings > Pages**, usually `https://YOUR_USERNAME.github.io/agriempower/`.
+1. This repository is named `AgriEmpower` and is public.
+2. The project includes the `.github/workflows/deploy.yml` workflow to test, build and publish after pushes to `main`.
+3. In GitHub, open **Settings > Pages > Build and deployment > Source**, then choose **GitHub Actions**.
+4. Find the deployed URL under **Settings > Pages** after the workflow succeeds.
 
 This project uses relative asset URLs and `#/page` routes so it works in GitHub Pages subfolders without special routing configuration.
 
 ## Project structure
 
 ```text
-agriempower/
+AgriEmpower/
   .github/workflows/deploy.yml   # test + deploy to GitHub Pages
-  assets/                        # original SVG illustration and install icons
+  assets/                        # illustrations, install icons and README overview
   scripts/build.mjs              # builds /dist without third-party tools
   scripts/dev.mjs                # local HTTP server
   src/app.js                     # routing, views, interactions and forms
