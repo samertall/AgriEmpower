@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+<title id="title">AgriEmpower — Grow. Learn. Thrive.</title>
+<desc id="desc">A visual overview of the AgriEmpower interactive front-end MVP for women farmers in Rwanda, with farming and nutrition lessons, English and Kinyarwanda localization, practical resources, local progress tracking, and offline app-shell support.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#102c25"/><stop offset="1" stop-color="#173f31"/></linearGradient>
+  <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b8ed83"/><stop offset="1" stop-color="#55b978"/></linearGradient>
+  <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#d9f4df" opacity=".12"/></pattern>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#061a14" flood-opacity=".25"/></filter>
+</defs>
+<rect width="1280" height="640" rx="28" fill="url(#bg)"/><rect width="1280" height="640" rx="28" fill="url(#dots)"/>
+<circle cx="1150" cy="85" r="210" fill="#5caa73" opacity=".12"/><circle cx="30" cy="600" r="230" fill="#b5e77c" opacity=".07"/>
+<g transform="translate(72 64)">
+  <path d="M32 57C2 47 0 17 2 0c28 2 47 17 45 45 9-25 29-37 56-35-3 34-23 55-55 54-6 15-10 27-13 43-3-20-3-34-3-50Z" fill="url(#leaf)"/>
+  <path d="M24 89c28-18 56-20 82-9-21 20-51 29-82 9Z" fill="#e5f6c8"/>
+  <text x="126" y="54" font-family="Inter,Arial,sans-serif" font-size="48" font-weight="800" fill="#ffffff" letter-spacing="-1.4">AgriEmpower</text>
+  <text x="128" y="91" font-family="Inter,Arial,sans-serif" font-size="21" fill="#d7ebdc">Grow. Learn. Thrive.</text>
+</g>
+<g transform="translate(72 214)">
+  <rect width="340" height="36" rx="18" fill="#c9f4a7" opacity=".16" stroke="#b8ed83" stroke-opacity=".6"/>
+  <circle cx="19" cy="18" r="5" fill="#b8ed83"/>
+  <text x="34" y="23" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="1.4" fill="#d8f5c3">INTERACTIVE FRONT-END MVP</text>
+  <text x="0" y="102" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="750" fill="#ffffff">Practical learning.</text>
+  <text x="0" y="148" font-family="Inter,Arial,sans-serif" font-size="37" font-weight="750" fill="#c5ee9a">Stronger communities.</text>
+  <text x="0" y="190" font-family="Inter,Arial,sans-serif" font-size="17" fill="#d7e6dd">Agriculture and household nutrition education</text>
+  <text x="0" y="216" font-family="Inter,Arial,sans-serif" font-size="17" fill="#d7e6dd">designed to support women farmers in Rwanda.</text>
+</g>
+<g transform="translate(700 65)" filter="url(#shadow)">
+  <rect width="510" height="510" rx="28" fill="#f7faf6"/>
+  <rect width="510" height="72" rx="28" fill="#ffffff"/>
+  <rect y="42" width="510" height="30" fill="#ffffff"/>
+  <circle cx="29" cy="35" r="6" fill="#e6b85c"/><circle cx="49" cy="35" r="6" fill="#a5d87e"/><circle cx="69" cy="35" r="6" fill="#9dc9e9"/>
+  <text x="28" y="106" font-family="Inter,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2" fill="#60816e">YOUR LEARNING SPACE</text>
+  <text x="28" y="139" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="800" fill="#173c2d">Learn something useful</text>
+  <text x="28" y="164" font-family="Inter,Arial,sans-serif" font-size="14" fill="#6b8175">Small steps, practical knowledge.</text>
+  <g transform="translate(28 190)">
+    <rect width="218" height="124" rx="16" fill="#e7f3df"/>
+    <circle cx="40" cy="39" r="22" fill="#c5e7ad"/>
+    <path d="M28 45c17-4 18-17 17-23-13 2-21 9-20 21m9 8 12-19" stroke="#387d4c" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <text x="18" y="82" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" fill="#214a33">Farming lessons</text>
+    <text x="18" y="103" font-family="Inter,Arial,sans-serif" font-size="12" fill="#5f7868">Learn · Practice · Review</text>
+    <rect x="234" width="220" height="124" rx="16" fill="#fff0d7"/>
+    <circle cx="274" cy="39" r="22" fill="#f7dba8"/>
+    <path d="M266 28h16v23h-16zM263 34h22M263 40h22M270 25v6M278 25v6" stroke="#9b6a24" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="252" y="82" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" fill="#674719">Nutrition guides</text>
+    <text x="252" y="103" font-family="Inter,Arial,sans-serif" font-size="12" fill="#8a6b3c">Everyday family wellbeing</text>
+  </g>
+  <g transform="translate(28 332)">
+    <rect width="454" height="70" rx="14" fill="#edf2ef"/>
+    <circle cx="32" cy="35" r="17" fill="#d4e8e0"/>
+    <path d="M23 35h18M32 26v18" stroke="#35755a" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="61" y="30" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" fill="#234a37">English / Kinyarwanda</text>
+    <text x="61" y="51" font-family="Inter,Arial,sans-serif" font-size="12" fill="#718277">Bilingual starter curriculum</text>
+    <rect x="0" y="84" width="454" height="70" rx="14" fill="#edf2ef"/>
+    <circle cx="32" cy="119" r="17" fill="#d4e8e0"/>
+    <path d="M25 111h14v17H25zM28 107h8" stroke="#35755a" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="61" y="114" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="750" fill="#234a37">Resources &amp; local progress</text>
+    <text x="61" y="135" font-family="Inter,Arial,sans-serif" font-size="12" fill="#718277">Guides, bookmarks, farm records</text>
+  </g>
+  <text x="28" y="482" font-family="Inter,Arial,sans-serif" font-size="12" fill="#7a8c81">Illustrative product overview · MVP data stays on-device</text>
+</g>
+<text x="72" y="590" font-family="Inter,Arial,sans-serif" font-size="13" fill="#b7d5c2">Built for accessible learning · Mobile-first · Offline app-shell support</text>
+</svg>
